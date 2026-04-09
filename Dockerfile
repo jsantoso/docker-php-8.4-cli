@@ -66,6 +66,7 @@ RUN /usr/local/bin/docker-php-ext-install bcmath
 RUN /usr/local/bin/docker-php-ext-install ldap
 RUN /usr/local/bin/docker-php-ext-install curl
 RUN /usr/local/bin/docker-php-ext-install sockets
+RUN /usr/local/bin/docker-php-ext-install pcntl
 
 RUN docker-php-ext-configure pdo_odbc --with-pdo-odbc=unixODBC,/usr
 RUN /usr/local/bin/docker-php-ext-install pdo_odbc
